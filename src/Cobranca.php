@@ -68,7 +68,7 @@ class Cobranca
     // Atualiza os dados da cobrança
     public function update($id, array $dadosCobranca)
     {
-        return $this->http->post('/payments/' . $id, $dadosCobranca);
+        return $this->http->put('/payments/' . $id, $dadosCobranca);
     }
 
     // Atualiza os dados da cobrança
