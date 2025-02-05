@@ -23,7 +23,7 @@ class Connection
             die('Tipo de homologação invalida');
         }
         $this->api_key = $token;
-        $this->base_url = "https://" . (($this->api_status) ? 'sandbox.asaas.com/api' : 'api.asaas.com');
+        $this->base_url = "https://" . (($this->api_status) ? 'api-sandbox' : 'api').'.asaas.com';
 
         return $this;
     }
