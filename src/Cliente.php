@@ -103,14 +103,14 @@ class Cliente
     if (!empty($dadosCliente['error'])) {
       return $dadosCliente;
     } else {
-      return $this->http->post('/customers/' . $id, $dadosCliente);
+      return $this->http->put('/customers/' . $id, $dadosCliente);
     }
   }
 
   // Deleta uma cliente
   public function delete($id)
   {
-    return $this->http->get('/customers/' . $id, '', 'DELETE');
+    return $this->http->delete('/customers/' . $id, '', 'DELETE');
   }
 
   // Atualiza os dados do cliente
