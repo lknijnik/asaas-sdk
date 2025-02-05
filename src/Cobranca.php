@@ -103,7 +103,7 @@ class Cobranca
     // Deleta uma cobrança
     public function delete($id)
     {
-        return $this->http->get('/payments/' . $id, '', 'DELETE');
+        return $this->http->delete('/payments/' . $id, '', 'DELETE');
     }
 
 
