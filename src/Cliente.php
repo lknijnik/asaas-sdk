@@ -82,9 +82,16 @@ class Cliente
   public function getByEmail($email)
   {
     $option = 'limit=1&email=' . $email;
-    return $this->http->get('/customers', $option);
+    return $this->http->get('/customers?', $option);
   }
 
+  // Retorna os dados do cliente a partir do cpfCnpj
+  public function getByCpfCnpj($cpfCnpj)
+  {
+    $option = 'limit=1&cpfCnpj=' . $cpfCnpj;
+    return $this->http->get('/customers?', $option);
+  }
+  
   // Insere um novo cliente
   public function create(array $dadosCliente)
   {
