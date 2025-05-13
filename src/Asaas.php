@@ -32,6 +32,7 @@ class Asaas {
     public $Conta;
     public $Finance;
     public $SubContas;
+    public $Checkout;
 
     private $connection;
 
@@ -58,6 +59,7 @@ class Asaas {
         $this->Conta     = new Conta($this->connection);
         $this->Finance     = new Finance($this->connection);
         $this->SubContas     = new SubContas($this->connection);
+        $this->Checkout     = new Checkout($this->connection);
     }
 
     public function Assinatura(){
@@ -150,4 +152,8 @@ class Asaas {
         return $this->webhook;
     }
 
+    public function Checkout(){
+        $this->Checkout     = new Checkout($this->connection);
+        return $this->Checkout;
+    }
 }
