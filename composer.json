@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "lknijnik\\Asaas\\": "src"
+      "LKnijnik\\Asaas\\": "src"
     }
   }
 }
