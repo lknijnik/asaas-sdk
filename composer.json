@@ -3,7 +3,7 @@
   "type"       : "library",
   "description": "Asaas.com PHP API Wrapper",
   "keywords"   : ["Asaas", "API", "Payment SaaS", "Credit Card", "Boleto", "PIX"],
-  "homepage": "http://www.leonelknijnik.com.br",
+  "homepage": "https://www.leonelknijnik.com.br",
   "license": "MIT",
   "authors": [
     {
