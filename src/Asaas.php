@@ -12,6 +12,9 @@ use LKnijnik\Asaas\Webhook;
 
 class Asaas {
 
+    private $ambiente;
+    private $ssl;
+
     public $cidade;
     public $assinatura;
     public $cliente;
@@ -32,12 +35,14 @@ class Asaas {
     public $Conta;
     public $Finance;
     public $SubContas;
-    public $Checkout;
 
     private $connection;
 
     public function __construct($token, $status = false) {
-        $this->connection = new Connection($token, ((!empty($status)) ? $status : 'producao'));
+        $this->connection = new Connection($token, ((!empty($status)) ? $status : 'producao'), $this->ssl);
+
+        $this->ambiente = $this->setEnvironment('producao');
+        $this->ssl = $this->setSSL(true);
 
         $this->assinatura  = new Assinatura($this->connection);
         $this->cidade = new Cidades($this->connection);
@@ -59,7 +64,6 @@ class Asaas {
         $this->Conta     = new Conta($this->connection);
         $this->Finance     = new Finance($this->connection);
         $this->SubContas     = new SubContas($this->connection);
-        $this->Checkout     = new Checkout($this->connection);
     }
 
     public function Assinatura(){
@@ -152,8 +156,14 @@ class Asaas {
         return $this->webhook;
     }
 
-    public function Checkout(){
-        $this->Checkout     = new Checkout($this->connection);
-        return $this->Checkout;
+    public function setEnvironment($value)
+    {
+        $this->ambiente = $value;
     }
+
+    public function setSSL($value)
+    {
+        $this->ssl = $value;
+    }
+
 }

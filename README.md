@@ -18,7 +18,7 @@ SDK não-oficial de integração á API do serviço www.asaas.com
 ## Installation
 
 ```bash
-composer require codephix/asaas-sdk
+composer require lknijnik/asaas-sdk
 ```
 
 Exemplo
@@ -45,6 +45,13 @@ Caso queira usar a API em modo teste basta especificar o `ambiente` no momento e
 $asaas = new Asaas('seu_token_de_acesso', 'producao|homologacao');
 ```
 
+Caso esteja usando em ambiente local, para desabilitar a verificação do SSL, use:
+
+```php
+$asaas->setSSL(false);
+```
+
+**ATENÇÃO: JAMAIS** utilize esta opção em produção!
 
 Clientes
 --------
