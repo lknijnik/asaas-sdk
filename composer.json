@@ -7,14 +7,14 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Max Alex",
-      "email": "contato@codephix.com",
-      "homepage": "https://www.codephix.com"
-    },
-    {
       "name": "Leonel Knijnik",
       "email": "contato@leonelknijnik.com.br",
       "homepage": "https://www.leonelknijnik.com.br"
+    },
+    {
+      "name": "Max Alex",
+      "email": "contato@codephix.com",
+      "homepage": "https://www.codephix.com"
     }
   ],
   "require": {
