@@ -1,9 +1,9 @@
 <?php
 
-namespace CodePhix\Asaas;
+namespace LKnijnik\Asaas;
 
-use CodePhix\Asaas\Connection;
-use CodePhix\Asaas\Exceptions\CobrancaException;
+use LKnijnik\Asaas\Connection;
+use LKnijnik\Asaas\Exceptions\CobrancaException;
 use \Exception;
 
 class Cobranca

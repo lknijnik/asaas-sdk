@@ -1,14 +1,14 @@
 <?php
 
-namespace CodePhix\Asaas;
+namespace LKnijnik\Asaas;
 
-use CodePhix\Asaas\Assinatura;
-use CodePhix\Asaas\Cliente;
-use CodePhix\Asaas\Cobranca;
-use CodePhix\Asaas\Extrato;
-use CodePhix\Asaas\Notificacao;
-use CodePhix\Asaas\Transferencia;
-use CodePhix\Asaas\Webhook;
+use LKnijnik\Asaas\Assinatura;
+use LKnijnik\Asaas\Cliente;
+use LKnijnik\Asaas\Cobranca;
+use LKnijnik\Asaas\Extrato;
+use LKnijnik\Asaas\Notificacao;
+use LKnijnik\Asaas\Transferencia;
+use LKnijnik\Asaas\Webhook;
 
 class Asaas {
 
