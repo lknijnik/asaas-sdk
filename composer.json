@@ -2,7 +2,7 @@
   "name": "lknijnik/asaas-sdk",
   "type"       : "library",
   "description": "Asaas.com PHP API Wrapper",
-  "keywords"   : ["Asaas", "API", "Payment SaaS", "Credit Card", "Boleto"],
+  "keywords"   : ["Asaas", "API", "Payment SaaS", "Credit Card", "Boleto", "PIX"],
   "homepage": "http://www.leonelknijnik.com.br",
   "license": "MIT",
   "authors": [
