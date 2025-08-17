@@ -16,7 +16,7 @@ class Connection
 
     public function __construct($token, $status, $ssl)
     {
-        if ($status == 'producao' || $status = 'production') {
+        if ($status == 'producao' || $status == 'production') {
             $this->api_status = false;
         } elseif ($status == 'homologacao' || $status == 'sandbox') {
             $this->api_status = 1;
@@ -75,11 +75,6 @@ class Connection
         } catch (Exception $e) {
             return ['error' => $e->getMessage()];
         }
-
-    }
-
-    private function requestApi($metodo = 'POST', $url = '', ?array $params = [], $json = true, $raw = 1)
-    {
 
     }
 
